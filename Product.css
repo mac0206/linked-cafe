@@ -1,0 +1,234 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header of the body */
+.btitle{
+    margin: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.title{
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #b08968;
+    border-radius: 12px;
+}
+/* Backgroung image of body  */
+body{
+/* background-color: #ede0d4; */
+background: hsla(29, 41%, 88%, 1);
+
+background: radial-gradient(circle, hsla(29, 41%, 88%, 1) 0%, hsla(23, 39%, 44%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(29, 41%, 88%, 1) 0%, hsla(23, 39%, 44%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(29, 41%, 88%, 1) 0%, hsla(23, 39%, 44%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EDE0D4", endColorstr="#9C6644", GradientType=1 );
+}
+/* section all product style */
+.product{
+    display: flex;
+    flex-direction: column;
+    background-color: #7f5539;
+    border-radius: 6px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.product img{
+    border-radius: 6px;
+    margin: 12px;
+}
+.product p{
+    color: #ede0d4;
+    text-align: center;
+    margin: 0px;
+}
+.americano{
+    font-weight: bold;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.product:hover .cart{
+    height: 100%;
+}
+.product:hover img{
+    transform: scale(1.05);
+    transition: 200ms;
+}
+.hotExpresso{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 50px;
+}
+.container h1{
+    text-align: center;
+    font-size: 35px;
+    color: #000000;
+    padding-bottom: 20px;
+}
+.row{
+    display: flex;
+    gap: 40px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+/* for buttons  */
+.menu-bar {
+    
+
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-left: 20px;
+    
+}
+
+.menu-bar a {
+   
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 2.5rem; /* Increase font size here */
+   
+}
+
+.menu-bar ul {
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.menu-bar li {
+
+    margin: 0 15px;
+}
+
+.logo {
+    height: 82px; /* Set initial height */
+    width: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* .menu-bar ul li a:hover {
+   background-color: #ffffff;
+    color: #575757;
+    transition:0.3s ease; Smooth transition
+    
+} */
+.menu-bar li:hover{
+    transform: scale(1.2);
+    transition:0.3s ease;
+}
+
+.box1 {
+    
+    
+    grid-area: box1;
+    display: flex; /* Enable Flexbox */
+    justify-content: start; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure it takes full height of the grid cell */
+    background-color: #e6ccb2;
+   
+}
+.cart{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+}
+.product:hover .cart{
+    height: 100%;
+    background: rgba(255, 255, 255, 0.43);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.2px);
+    -webkit-backdrop-filter: blur(10.2px);
+    /* border: 1px solid rgba(255, 255, 255, 0.51); */
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    align-items: center;
+}
+.button button:hover{
+    transform: scale(1.05);
+    transition: 200ms ease;
+    background-color: #9ef01a;
+}
+.button input{
+    width: 90%;
+    height: 25px;
+    text-align: center;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: -2px 1px 39px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 1px 39px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 1px 39px -9px rgba(0,0,0,0.75);
+}
+.button button{
+    background: white;
+    width: 90%;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: -2px 1px 39px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 1px 39px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 1px 39px -9px rgba(0,0,0,0.75);
+}
+.description {
+    margin: 10px;
+}
+.description p{
+    color: #002642;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
